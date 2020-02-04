@@ -1,0 +1,12 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+   
+  - name: "[creation des script]" 
+    shell: "{{ item }}"
+    with_items:
+     - touch /etc/test1.sh
+     - touch /etc/test2.sh
+    become: yes
+    become_method: sudo
