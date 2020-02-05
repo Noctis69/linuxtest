@@ -8,5 +8,3 @@
     with_items:
      - touch /etc/test1.sh
      - touch /etc/test2.sh
-    become: yes
-    become_method: sudo
